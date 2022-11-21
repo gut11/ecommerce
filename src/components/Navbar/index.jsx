@@ -13,18 +13,19 @@ const Navbar = ()=>{
                     </div>
                 </div>
                 <div className='user_nav'>
-                    <a>Cadastrar</a>
-                    <a>Entrar</a>
+                    <a href='/'>Cadastrar</a>
+                    <a href='/'>Entrar</a>
                     <FaShoppingCart></FaShoppingCart>
                 </div>
             </div>
             <div className='header_nav'>
                 <nav>
-                    <a>Vestidos</a>
-                    <a>Calças</a>
-                    <a>Blusas</a>
-                    <a>Saias</a>
-                    <a>Botas</a>
+                    
+                    <a href='/'>Vestidos</a>
+                    <a href='/'>Calças</a>
+                    <a href='/'>Blusas</a>
+                    <a href='/'>Saias</a>
+                    <a href='/'>Botas</a>
                 </nav>
             </div>
         </header>
