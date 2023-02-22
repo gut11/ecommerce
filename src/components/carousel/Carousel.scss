@@ -1,0 +1,90 @@
+#carousel-image-container {
+  width: 100%;
+  height: 40em;
+  display: flex;
+  flex-direction: row; 
+  overflow: hidden;
+  position: relative;
+
+  .carousel-images {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-shrink: 0;
+	padding-bottom: 7.5em;
+	position: relative;
+	animation-fill-mode: forwards;
+	right: 100%;
+
+	button{
+		width: 15.5em;
+		height: 3.5em;
+		background-color: gray;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+  }
+  #carousel-controls-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+	padding: 3em;
+	padding-bottom: 1.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.carousel-arrows{
+		border: none;
+		background-color: transparent;
+		font-size: 4em;
+		cursor: pointer;
+	}	
+  }
+  ul{
+	  display: flex;
+	  flex-direction: row;
+	  align-items:center;
+	  align-self: flex-end;
+  }
+  li{
+	  list-style: none;
+  }
+  .carousel-balls button{
+	  border-radius: 20px;
+	  width: 10px;
+	  height: 10px;
+	  border: 1px;
+	  border-style: solid;
+	  border-color: red;
+	  margin: 2px;
+	  background-color: transparent;
+	  cursor: pointer;
+  }
+  .current-ball button{
+	  border-color: blue;
+  }
+}
+
+@keyframes next-image {
+	0% {right: 100%;}
+	100% {right: 200%;}
+}
+
+@keyframes previous-image{
+	0% {right: 100%;}
+	100% {right: 0%;}
+}
+
+@keyframes paint-next-ball{
+	100%{border-color: blue;}
+}
+
